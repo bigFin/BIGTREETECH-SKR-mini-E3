@@ -915,7 +915,7 @@
  *                                      X, Y, Z, E0 [, E1[, E2...]]
  */
 #define DEFAULT_AXIS_STEPS_PER_UNIT                                            \
-  { 80, 80, 400, 333 }
+  { 80, 80, 400, 220 }
 
 /**
  * Default Max Feed Rate (mm/s)
@@ -1186,7 +1186,7 @@
  *     O-- FRONT --+
  */
 #define NOZZLE_TO_PROBE_OFFSET                                                 \
-  { 0, -10, 0 }
+  { 0, -10, -4 }
 
 // Most probes should stay away from the edges of the bed, but
 // with NOZZLE_AS_PROBE this can be negative for a wider probing area.
@@ -1375,8 +1375,8 @@
 // @section machine
 
 // The size of the printable area
-#define X_BED_SIZE 235
-#define Y_BED_SIZE 235
+#define X_BED_SIZE 220
+#define Y_BED_SIZE 220
 
 // Travel limits (mm) after homing, corresponding to endstop positions.
 #define X_MIN_POS 0
@@ -1744,7 +1744,7 @@
 // For DELTA this is the top-center of the Cartesian print volume.
 #define MANUAL_X_HOME_POS -25
 #define MANUAL_Y_HOME_POS -15
-#define MANUAL_Z_HOME_POS 2.8
+#define MANUAL_Z_HOME_POS 3
 
 // Use "Z Safe Homing" to avoid homing with a Z probe outside the bed area.
 //
